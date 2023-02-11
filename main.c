@@ -1,18 +1,18 @@
-#include <stdio.h>
+#include <stdio.h> // Bibliotecas
 #include <math.h>
 
 float raiz(float n){
-    float chute = 0, passo = 1;
+    float chute = 0, passo = 1; // Declarando Chute e Passo
     
-    int i;
+    int i; // Declara uma váriavel para usar na Função
     
-    for(i=0; i<6; i++){
+    for(i=0; i<6; i++){ // Loop
         
-        //COM FOR
+        //FUNÇÃO USANDO FOR
         //for(chute = 0; chute * chute <= n; chute++);
     
-         // COM WHILE
-        while(chute*chute <= n)
+         // FUNÇÃO USANDO WHILE
+        while(chute*chute <= n) // Conta da Raiz Quadrada
         {
             chute = chute + passo;
         }
@@ -21,19 +21,19 @@ float raiz(float n){
         passo = passo / 10;
     }
     
-    return chute;
+    return chute; // Retorna o Resultado Final
     
 }
         
 
 int main()
 {   
-    float n;
+    float n; // Declara Var N 
     
-    printf("Entre com N: ");
-    scanf("%f", &n);
+    printf("Entre com N: "); // Pede para o Usuário Digitar um Número
+    scanf("%f", &n); // Lê o Número Digitado e armazena na Var N
     
-    printf("\n%.3f", raiz(n));
+    printf("\n%.3f", raiz(n)); // Imprime o Resultado
 
-    return 0;
+    return 0; // Encerra o Programa
 }
