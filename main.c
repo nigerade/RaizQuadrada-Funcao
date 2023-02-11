@@ -1,7 +1,8 @@
 #include <stdio.h> // Bibliotecas
 #include <math.h>
 
-float raiz(float n){
+// COMEÇO DA FUNÇÃO
+float raiz(float n){ 
     float chute = 0, passo = 1; // Declarando Chute e Passo
     
     int i; // Declara uma váriavel para usar na Função
@@ -24,8 +25,12 @@ float raiz(float n){
     return chute; // Retorna o Resultado Final
     
 }
-        
+// FIM DA FUNÇÃO 
 
+
+
+
+// COMEÇO DO PROGRAMA PRINCIPAL
 int main()
 {   
     float n; // Declara Var N 
@@ -37,3 +42,4 @@ int main()
 
     return 0; // Encerra o Programa
 }
+// FIM DO PROGRAMA PRINCIPAL
